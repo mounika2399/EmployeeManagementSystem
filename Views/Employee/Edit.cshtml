@@ -1,0 +1,10 @@
+@model EmployeeManagementSystem.Models.Employee
+
+<h2>Edit Employee</h2>
+<form method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    Name: <input name="Name" value="@Model.Name" /><br />
+    Department: <input name="Department" value="@Model.Department" /><br />
+    Email: <input name="Email" value="@Model.Email" /><br />
+    <button type="submit">Update</button>
+</form>
